@@ -6,17 +6,15 @@ POINTS_PER_UNIT = 5
 def draw(f, minX=-2, maxX=2, minY=-2, maxY=2):
   xp, yp = points(f, minX, maxX, minY, maxY)
   
-  for i in range(len(xp)-1):
+  for i in range(len(xp)):
     plot(xp[i], yp[i], 'b')
 
 def points(f, minX, maxX, minY, maxY):
   xp = []
   yp = []
-  width = abs(minX) + abs(maxX)
-  height = abs(minY) + abs(maxY)
   
-  xs = ((arange(width * POINTS_PER_UNIT) / float(POINTS_PER_UNIT)) - width/2.0)[1:]
-  ys = ((arange(height * POINTS_PER_UNIT) / float(POINTS_PER_UNIT)) - height/2.0)[1:] 
+  xs = arange(minX, maxX, 1 / float(POINTS_PER_UNIT))[1:]
+  ys = arange(minY, maxY, 1 / float(POINTS_PER_UNIT))[1:]
 
   for x in xs:
     for y in ys:
