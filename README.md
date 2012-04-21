@@ -9,7 +9,9 @@ y' = x^2 + y^2 - 1
 
 First we'll need to create a Python anonymous function:
 
-`f = lambda x, y: x**2 + y**2 - 1`
+```python
+f = lambda x, y: x**2 + y**2 - 1
+```
 
 then simply call:
 
