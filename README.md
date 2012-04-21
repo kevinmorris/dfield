@@ -13,8 +13,10 @@ First we'll need to create a Python anonymous function:
 
 then simply call:
 
-`from dfield import *
-draw(f)
-`
+```python
+    from dfield import *
+    draw(f)
+```
+
 
 Matplotlib will display a plot of the differential equation from (-2 < x < 2), (-2 < y < 2)
