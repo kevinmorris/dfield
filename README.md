@@ -14,8 +14,8 @@ First we'll need to create a Python anonymous function:
 then simply call:
 
 ```python
-    from dfield import *
-    draw(f)
+  from dfield import *
+  draw(f)
 ```
 
 
