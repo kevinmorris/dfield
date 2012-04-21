@@ -3,7 +3,6 @@ from pylab import *
 SLOPE_SEGMENT_LENGTH = 0.12
 POINTS_PER_UNIT = 5
 
-def draw(f, minX=-2, maxX=2, minY=-2, maxY=-2):
 def draw(f, minX=-2, maxX=2, minY=-2, maxY=2):
   xp, yp = points(f, minX, maxX, minY, maxY)
   
