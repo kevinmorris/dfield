@@ -14,9 +14,17 @@ First we'll need to create a Python anonymous function:
 then simply call:
 
 ```python
-  from dfield import *
-  draw(f)
+from dfield import *
+draw(f)
 ```
 
 
 Matplotlib will display a plot of the differential equation from (-2 < x < 2), (-2 < y < 2)
+
+You can also provide the bounds for the plot yourself.  If you don't wish to use the -2:2 plot for the x, y axes, you may specify the bounds you'd like through arguments to `draw`.
+
+For example:
+
+```python
+draw(f, minX=-8, maxX=0, minY=-1, maxY=4)
+```
